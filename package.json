@@ -1,0 +1,19 @@
+{
+  "name": "talk-graphql-example",
+  "version": "1.0.0",
+  "description": "Um projeto de exemplo demonstrando o uso de GraphQL",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "private": "true",
+  "keywords": [],
+  "author": "Lucas Viana <contato@lucasviana.dev>",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@apollo/server": "^4.9.3",
+    "dotenv": "^16.3.1",
+    "graphql": "^16.8.1"
+  }
+}
