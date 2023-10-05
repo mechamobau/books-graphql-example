@@ -4,16 +4,22 @@
   "description": "Um projeto de exemplo demonstrando o uso de GraphQL",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node src/index.js",
+    "test": "jest"
   },
   "private": "true",
   "keywords": [],
   "author": "Lucas Viana <contato@lucasviana.dev>",
   "license": "MIT",
-  "type": "module",
   "dependencies": {
     "@apollo/server": "^4.9.3",
     "dotenv": "^16.3.1",
     "graphql": "^16.8.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.23.0",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0"
   }
 }
