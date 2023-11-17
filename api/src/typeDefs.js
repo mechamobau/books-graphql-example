@@ -39,6 +39,6 @@ const typeDefs = `#graphql
         createAuthor(input: NewAuthorInput): Author
         deleteAuthor(authorID: String): SuccessResponse
     }
-`
+`;
 
-module.exports = typeDefs
+module.exports = typeDefs;

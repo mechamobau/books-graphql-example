@@ -1,22 +1,28 @@
-import * as React from 'react';
 import { createRoot } from 'react-dom/client';
-import { createBrowserRouter, RouterProvider, Link } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { ApolloProvider } from '@apollo/client';
 import client from './client';
+import Books from './components/Books';
+import Authors from './components/Authors';
+import NewAuthor from './components/NewAuthor';
+import NewBook from './components/NewBook';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: (
-      <div>
-        <h1>Hello World</h1>
-        <Link to="about">About Us</Link>
-      </div>
-    ),
+    element: <Books />,
   },
   {
-    path: 'about',
-    element: <div>About</div>,
+    path: 'authors',
+    element: <Authors />,
+  },
+  {
+    path: 'author/new',
+    element: <NewAuthor />,
+  },
+  {
+    path: 'book/new',
+    element: <NewBook />,
   },
 ]);
 

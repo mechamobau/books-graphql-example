@@ -1,0 +1,8 @@
+.book-item {
+  display: flex;
+  align-items: center;
+}
+
+.book-item__author {
+  margin-left: 10px;
+}
